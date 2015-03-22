@@ -8,4 +8,4 @@
 -export([print_list/1]).
 
 print_list([]) -> done;
-print_list([A|B]) -> erlang:display(A), print_list(B).
+print_list([Head|Tail]) -> erlang:display(Head), print_list(Tail).
