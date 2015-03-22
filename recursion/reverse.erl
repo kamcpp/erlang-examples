@@ -7,8 +7,8 @@
 
 -export([reverse/1]).
 
-reverse(L) -> reverse(L, []).
+reverse(List) -> reverse(List, []).
 
 % Notice that reserve/2 is a private method since it is not exported.
-reverse([], R) -> R;
-reverse([H|T], R) -> reverse(T, [H|R]).
+reverse([], Reversed) -> Reversed;
+reverse([Head|Tail], Reversed) -> reverse(Tail, [Head|Reversed]).
