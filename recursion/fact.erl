@@ -2,7 +2,7 @@
 % Autho: Kamran Amini  <kam.cpp@gmail.com>
 %------------------------------------------------
 
--module(recursion).
+-module(fact).
 -author('Kamran Amini  kam.cpp@gmail.com').
 
 -export([fact/1]).

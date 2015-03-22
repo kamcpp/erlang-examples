@@ -2,7 +2,7 @@
 % Author: Kamran Amini  <kam.cpp@gmail.com>
 %-------------------------------------------------
 
--module(recursion).
+-module(reverse).
 -author('Kamran Amini  kamc.cpp@gmail.com').
 
 -export([reverse/1]).

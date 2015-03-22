@@ -2,10 +2,8 @@
 % Author: Kamran Amini  <kam.cpp@gmail.com>
 %-------------------------------------------------
 
--module(print_list).
+-module(find_key_in_list).
 -author('Kamran Amini  kamc.cpp@gmail.com').
 
--export([print_list/1]).
+-export([find_key/2]).
 
-print_list([]) -> done;
-print_list([A|B]) -> erlang:display(A), print_list(B).
