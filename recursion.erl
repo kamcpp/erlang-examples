@@ -1,5 +1,5 @@
 %------------------------------------------------
-% Autho: Kamran Amini  <kam.cpp@gmail.com>
+% Author: Kamran Amini  <kam.cpp@gmail.com>
 %------------------------------------------------
 
 -module(recursion).
