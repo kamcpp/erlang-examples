@@ -29,3 +29,10 @@ internal_search_key([], _, _) -> notfound;
 internal_search_key([Key|_], Key, Index) -> {found, Index};
 internal_search_key([_|Tail], Key, Index) -> internal_search_key(Tail, Key, Index + 1).
 
+% Count Keys in List
+
+count_key(List, Key) -> internal_count_key(List, Key, 0).
+
+internal_count_key([], _, Count) -> Count.
+internal_count_key([Key|Tail], Key, Count) -> internal_count_key(Tail, Key, Count + 1);
+internal_count_key([Head|Tail], Key, Count) -> internal_count_key(Tail, Key, Count).
